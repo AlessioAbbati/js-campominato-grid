@@ -1,16 +1,14 @@
 // genero la griglia 
 
-
-
 const eleGrid = document.querySelector(".grid");
-// createGrid(100, eleGrid);
+
+const eleBtnPlay = document.querySelector(".btn");
 
 for (let i = 0; i < 100; i++) {
     eleGrid.innerHTML += `<div class="cell">${i + 1}</div>`;
 }
 
 // utilizzo la classe clicked per colorare le caselle
-
 const listCells = document.querySelectorAll(".cell")
 
 for (let i = 0; i < listCells.length; i++) {
@@ -23,9 +21,3 @@ for (let i = 0; i < listCells.length; i++) {
     );
 
 }
-
-// function createGrid (numCells, eleContainer) {
-//     for (let i = 0; i < numCells; i++) {
-//         eleContainer.innerHTML += 
-//     }
-// }
