@@ -28,16 +28,19 @@ body {
     padding-inline: 1rem;
 }
 .grid {
+    --sideSquare: 10;
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     box-sizing: content-box;
     
 }
 .cell {
-    width: 40px;
-    height: 40px;
+    width: calc(100% - var(--sideSquare));
+    height: calc(100% - var(--sideSquare));
+    flex-grow: 0;
+    flex-shrink: 0;
     border: 2px solid black;
     display: flex;
     justify-content: center;
